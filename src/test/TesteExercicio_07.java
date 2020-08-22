@@ -11,31 +11,10 @@ public class TesteExercicio_07 {
 	@Test
 	public void calculaInssTeste() {
 		
-		assertEquals("78", ex7.calculaSalario(1045.00).toString());
-		assertEquals("94", ex7.calculaSalario(1045.01).toString());
-		assertEquals("250", ex7.calculaSalario(2089.61).toString());
-		assertEquals("438", ex7.calculaSalario(3134.41).toString());
+		assertEquals("78,38", ex7.calculaSalario(1045.00));
+		assertEquals("94,05", ex7.calculaSalario(1045.01));
+		assertEquals("250,75", ex7.calculaSalario(2089.61));
+		assertEquals("376,13", ex7.calculaSalario(3134.41));
 				
 	}
-	
-
-//	@Test
-//	public void calculaInssTeste1() {
-//	assertEquals("94", ex7.calculaSalario(1045.01).toString());
-//	}
-//	
-//
-//	@Test
-//	public void calculaInssTeste2() {
-//	
-//	assertEquals("250", ex7.calculaSalario(2089.61).toString());
-//	}
-//	
-//
-//	@Test
-//	public void calculaInssTeste3() {
-//	assertEquals("438", ex7.calculaSalario(3134.41).toString());
-//	}
-//	
-
 }
