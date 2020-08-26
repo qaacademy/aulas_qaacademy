@@ -15,7 +15,7 @@ public class ExercicioMatriz {
 		}
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 3; j++) {
-				System.out.print(num[i][j] + " | ");// utiliza a mesma repeti��o para imprimir os valores
+				System.out.print(num[i][j] + " | ");// utiliza a mesma repetição para imprimir os valores
 			}
 			System.out.println("\n");// para quebras a linha e ficar com formato de matriz
 		}
