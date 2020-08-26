@@ -14,7 +14,6 @@ public class Exercicio6_Medium {
 		for (int i = 0; i < numeros.length; i++) {
 			igual = numeros[i];
 			for (int j = i+1; j < numeros.length; j++) {
-
 				if (numeros[j] == igual) {
 					temIgual = true;
 				}
