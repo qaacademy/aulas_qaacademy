@@ -4,23 +4,21 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Exercicio01_hard {
-
-	public static void main(String[] args) {
-		int[] vetnum = new int[100];
-		Random gerador = new Random();
-		for (int i = 0; i < vetnum.length; i++) {
-			vetnum[i] = gerador.nextInt(100);
-		}
-		Arrays.sort(vetnum);
 	
-
-		System.out.println("Números ordenados:");
-		for (int numero : vetnum) {
-			System.out.println(numero);
+	public static void main(String[] args) {
+		
+		int[] vetnum = new int[100]; //Cria Vetor
+		Random numeroRamdomico = new Random();//Cria objeto Random
+		for (int i = 0; i < vetnum.length; i++) { //For para popular o vetor
+			vetnum[i] = numeroRamdomico.nextInt(100);  //Atribui para a posição i, um numero Randomico de 0 a 100. 
+			System.out.println(vetnum[i]); //Imprime Vetor
 		}
-
-		System.out.println("O Menor número é: " + vetnum[0]);
-
+		Arrays.sort(vetnum);//Ordena Vetor
+		for (int i = 0; i < vetnum.length; i++) {
+			System.out.println(vetnum[i]); //Imprime vetor ordenado posição i
+		}
+		System.out.println("O Menor numero é: "+vetnum[0]); //Exibe o menor do Vetor
+		
 	}
 
 }
